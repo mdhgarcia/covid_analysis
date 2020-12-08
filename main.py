@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-def plotRollingSum(df, weeks, title, legend=True, figsize=[24,24]):
+def plotRollingSum(df, weeks, title, legend=True, figsize=[24,24], dpi=300):
     title += f' - {weeks} Week Rolling Sum'
     if weeks > 1:
         rolling = df.rolling(weeks).sum()
@@ -21,7 +21,7 @@ def plotRollingSum(df, weeks, title, legend=True, figsize=[24,24]):
                          xytext=(0,0),
                          ha='center')
 
-    plt.savefig(title + ".png", dpi=600)
+    plt.savefig(f'{title}-{dpi}dpi.png', dpi=dpi)
     plt.show()
 
 df = pd.read_csv('Weekly_counts_of_death_by_jurisdiction_and_cause_of_death_2020-12-06.csv',
