@@ -1,8 +1,9 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+from pathlib import Path
 
-def plotRollingSum(df, weeks, title, legend=True, figsize=[24,24], dpi=300):
+def plotRollingSum(df, weeks, title, legend=True, figsize=[24,24], dpi=300, prefix='./plots'):
     title += f' - {weeks} Week Rolling Sum'
     if weeks > 1:
         rolling = df.rolling(weeks).sum()
@@ -21,8 +22,11 @@ def plotRollingSum(df, weeks, title, legend=True, figsize=[24,24], dpi=300):
                          xytext=(0,0),
                          ha='center')
 
-    plt.savefig(f'{title}-{dpi}dpi.png', dpi=dpi)
+    plt.savefig(f'{prefix}/{title}-{dpi}dpi.png', dpi=dpi)
     plt.show()
+
+# Ensure plots folder exists
+Path("./plots").mkdir(parents=True, exist_ok=True)
 
 df = pd.read_csv('Weekly_counts_of_death_by_jurisdiction_and_cause_of_death.csv',
                  # index_col=['Jurisdiction',
