@@ -24,7 +24,7 @@ def plotRollingSum(df, weeks, title, legend=True, figsize=[24,24], dpi=300):
     plt.savefig(f'{title}-{dpi}dpi.png', dpi=dpi)
     plt.show()
 
-df = pd.read_csv('Weekly_counts_of_death_by_jurisdiction_and_cause_of_death_2020-12-06.csv',
+df = pd.read_csv('Weekly_counts_of_death_by_jurisdiction_and_cause_of_death.csv',
                  # index_col=['Jurisdiction',
                  #            'Cause Group',
                  #            'Week Ending Date'],
