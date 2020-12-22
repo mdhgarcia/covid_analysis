@@ -4,7 +4,7 @@ Starting with rolling sums of weekly death counts to see if the data matches wha
 
 ## Dataset
 
-Weekly death counts by jurisdiction and cause group pulled from the CDC website at https://data.cdc.gov/NCHS/Weekly-counts-of-death-by-jurisdiction-and-cause-o/u6jv-9ijr on Dec. 6, 2020
+Weekly death counts by jurisdiction and cause group pulled from the CDC website at https://data.cdc.gov/NCHS/Weekly-counts-of-death-by-jurisdiction-and-cause-o/u6jv-9ijr updated Dec. 16, 2020, downloaded Dec. 21, 2020.
 
 ## Approach
 
@@ -19,4 +19,3 @@ TODO:
 3. Add data prior to 2015
 4. Start looking into cause groups
 5. Try and find ICU capacity data and compare with flu 2018
-
