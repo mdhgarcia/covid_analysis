@@ -4,14 +4,14 @@ Starting with rolling sums of weekly death counts to see if the data matches wha
 
 ## Dataset
 
-Weekly death counts by jurisdiction and cause group pulled from the CDC website at https://data.cdc.gov/NCHS/Weekly-counts-of-death-by-jurisdiction-and-cause-o/u6jv-9ijr updated Dec. 16, 2020, downloaded Dec. 21, 2020.
+Weekly death counts by jurisdiction and cause group pulled from the CDC website at https://data.cdc.gov/NCHS/Weekly-counts-of-death-by-jurisdiction-and-cause-o/u6jv-9ijr
 
 ## Approach
 
 Keeping it simple to start
 1. Group by jurisdiction and week end date only, just sum all cause groups for now
 2. Separate states/jurisdictions from the country as a whole
-3. Calculate rolling sums of 1, 2, 4, 13, 26, and 52 weeks for some insight into the gravity of the current situation.
+3. Calculate rolling sums of 2, 4, 13, 26, and 52 weeks for some insight into the gravity of the current situation.
 
 TODO:
 1. Add trend line
